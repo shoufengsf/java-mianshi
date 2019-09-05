@@ -26,7 +26,7 @@ public class SingletonDemo1 {
         if (singletonDemo1 == null){
             synchronized (SingletonDemo1.class){
                 //如果不再做一次空判断将导致多次创建
-                //如果singletonDemo1不volatile可能由于指令重排的原因导致多次创建
+                //如果singletonDemo1不volatile可能由于指令重排的原因导致singletonDemo1不为null但是未完成初始化
                 if (singletonDemo1 == null){
                     singletonDemo1 = new SingletonDemo1();
                     return singletonDemo1;
