@@ -11,7 +11,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  *
  * @author shoufeng
  */
-public class ArrayListNotSafeDemo {
+public class ListNotSafeDemo {
     public static void main(String[] args) {
         //默认创建长度为10的object[],扩容每次扩容原长度的一半
         ArrayList<String> list = new ArrayList<>();
