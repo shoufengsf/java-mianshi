@@ -26,6 +26,7 @@ public class GarbageDemo {
      * Did you mean '(+/-)UseSerialGC'?
      * Error: Could not create the Java Virtual Machine.
      * Error: A fatal exception has occurred. Program will exit.
+     * -Xms10M -Xmx10M -XX:+PrintGCDetails -XX:+PrintCommandLineFlags -XX:+UseG1GC
      *
      * @param args
      */
